@@ -1,0 +1,205 @@
+html{
+  scroll-behavior: smooth;
+}
+  *{
+    font-family: sans-serif;
+  }
+  body{
+    margin: auto;
+    background-color: white;
+  }
+  .header {
+    /*overflow: hidden;*/
+    background-color: #2D0909;
+    display: block;
+    margin: auto;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  .header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    margin-top: 25px;
+  }
+  .header img {
+      height: 90px;
+      width: 100px;
+      margin-left: 30px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      border: 2px solid #2D0909;
+  }
+  .header a:hover {
+    background-color: #2D0909;
+    border: 2px solid white;
+    color: white;
+    border-radius: 8px;
+  }
+  .header-right {
+    float: right;
+  }
+   /* Dropdown Button */
+.dropbtn {
+  background-color: #2D0909;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  /*position: absolute;*/
+  /*background-color: #f1f1f1;*/
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #812917;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #4CAF50 ;} 
+  .content{
+    background-image: url("background.jpg");
+    text-align: center;
+    color: white;
+    font-style: italic;
+    height: 600px;
+    background-size: cover;
+  }
+  .button{
+    background-color: black;
+    border: 2px solid #812917;
+    color: white;
+    padding: 20px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-style: normal;
+  }
+  .button:hover{
+    background-color: #822222;
+    color: white;
+  }
+  #Section{
+    height: 600px;
+    color: black;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+  .part{
+    float:left;
+    width: 43%;
+    padding: 36px;
+  }
+  #gallery{
+    height: 700px;
+    color: black;
+    text-align: center;
+  }
+  .footer{
+    height: 200px;
+    color: white;
+    text-align: center;
+    background-color: black;
+    position: relative;
+  }
+  .main{
+    background-color: white;
+  }
+  .mySlides {display: inline-block;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  margin: auto;
+  position: inherit;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: white;
+}
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: inherit;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
